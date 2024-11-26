@@ -6,20 +6,18 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="100vw">
       <Head>
-        <title>Flashcard Saas</title>
+        <title>Flashcard SaaS</title>
         <meta name="description" content="Create flashcard from your text" />
       </Head>
 
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6" style={{ flexGrow: 1 }}>
-            Flashcard Saas
-          </Typography>
+          <Typography variant="h6" style={{ flexGrow: 1 }}>Flashcard SaaS</Typography>
           <SignedOut>
-            <Button>Login</Button>
-            <Button>Sign Up</Button>
+            <Button color="inherit">Login</Button>
+            <Button color="inherit">Sign Up</Button>
           </SignedOut>
           <SignedIn>
             <UserButton />
